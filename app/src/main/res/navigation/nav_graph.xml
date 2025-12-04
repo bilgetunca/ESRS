@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/emergencyDetailFragment"
+        android:name="com.example.soscloud.ui.emergencydetail.EmergencyDetailFragment"
+        tools:layout="@layout/fragment_emergency_detail">
+        
+        <action
+            android:id="@+id/action_emergencyDetailFragment_to_emergencyDetailsMapFragment"
+            app:destination="@id/emergencyDetailsMapFragment" />
+            
+        <argument
+            android:name="emergencyId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_campus_map"
+        android:name="com.example.soscloud.ui.campusmap.CampusMapFragment" />
+
+    <fragment
+        android:id="@+id/departmentNotificationsFragment"
+        android:name="com.example.soscloud.ui.department.DepartmentNotificationsFragment"
+        tools:layout="@layout/fragment_department_notifications">
+        
+        <action
+            android:id="@+id/action_departmentNotificationsFragment_to_emergencyDetailFragment"
+            app:destination="@id/emergencyDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allEmergencyFragment"
+        android:name="com.example.soscloud.ui.alldepartment.AllDepartmentEmergencyFragment"
+        tools:layout="@layout/fragment_all_department_emergency">
+        
+        <action
+            android:id="@+id/action_allEmergencyFragment_to_emergencyDetailFragment"
+            app:destination="@id/emergencyDetailFragment" />
+    </fragment>
+
+</navigation> 

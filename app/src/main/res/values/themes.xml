@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SosCloud" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorControlNormal">@color/maintextcolor</item>
+        <item name="android:textColorPrimary">@color/maintextcolor</item>
+        <item name="actionBarStyle">@style/CustomAppBarStyle</item>
+    </style>
+
+    <style name="Theme.SosCloud" parent="Base.Theme.SosCloud" />
+
+    <style name="Theme.SosCloud.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SosCloud.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/maintextcolor</item>
+        <item name="android:textColorPrimary">@color/maintextcolor</item>
+    </style>
+
+    <style name="Theme.SosCloud.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

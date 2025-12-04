@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sos_personnel_navigation"
+    app:startDestination="@id/departmentNotificationsFragment">
+
+        
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.soscloud.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/sosuserguideFragment"
+        android:name="com.example.soscloud.ui.sospersonnelguide.SosPersonnelGuide"
+        tools:layout="@layout/fragment_sos_personnel_guide" />
+    <fragment
+        android:id="@+id/nav_campus_map"
+        android:name="com.example.soscloud.ui.campusmap.CampusMapFragment"
+        tools:layout="@layout/fragment_campus_map" />
+    <fragment
+        android:id="@+id/departmentNotificationsFragment"
+        android:name="com.example.soscloud.ui.department.DepartmentNotificationsFragment"
+        tools:layout="@layout/fragment_department_notifications">
+        <action
+            android:id="@+id/action_departmentNotificationsFragment_to_sosEmergencyDetailFragment"
+            app:destination="@id/sosEmergencyDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allEmergencyFragment"
+        android:name="com.example.soscloud.ui.alldepartment.AllDepartmentEmergencyFragment"
+        tools:layout="@layout/fragment_all_department_emergency">
+    </fragment>
+
+    <fragment
+        android:id="@+id/sosEmergencyDetailFragment"
+        android:name="com.example.soscloud.ui.sospersonnel.SosEmergencyDetailFragment"
+
+        tools:layout="@layout/fragment_sos_emergency_detail">
+        <argument
+            android:name="emergencyId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_sosEmergencyDetailFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:layout="@layout/fragment_map"
+        android:name="com.example.soscloud.ui.map.MapFragment"
+     >
+        <argument
+            android:name="latitude"
+            app:argType="float" />
+        <argument
+            android:name="longitude"
+            app:argType="float" />
+    </fragment>
+
+
+
+</navigation> 

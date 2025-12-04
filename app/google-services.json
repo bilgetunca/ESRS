@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "15685392176",
+    "project_id": "testsoscloud-db21a",
+    "storage_bucket": "testsoscloud-db21a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15685392176:android:9e94619d5c1f4f7c6a1af5",
+        "android_client_info": {
+          "package_name": "com.example.soscloud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnOPHQBSpFejQdNUdghLGT-sSBPrdZrJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

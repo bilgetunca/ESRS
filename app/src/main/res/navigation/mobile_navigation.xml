@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/makeNotificationFragment">
+
+    <fragment
+        android:id="@+id/makeNotificationFragment"
+        android:name="com.example.soscloud.ui.makenotification.MakeNotificationFragment"
+        tools:layout="@layout/fragment_make_notification" >
+        <action
+            android:id="@+id/action_makeNotification_to_emergencyFormFragment"
+            app:destination="@id/emergencyFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/emergencyFormFragment"
+        android:name="com.example.soscloud.ui.makenotification.EmergencyFragment"
+        tools:layout="@layout/fragment_emergency_form">
+        <action
+            android:id="@+id/action_emergencyFormFragment_to_emergencyModalFragment"
+            app:destination="@id/emergencyModalFragment" />
+        <action
+            android:id="@+id/action_emergencyFormFragment_to_makeNotificationFragment"
+            app:destination="@id/makeNotificationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/emergencyModalFragment"
+        android:name="com.example.soscloud.ui.emergencymodal.EmergencyModal"
+        tools:layout="@layout/fragment_emergency_modal">
+        <action
+            android:id="@+id/action_emergencyModalFragment_to_emergencyFormFragment"
+            app:destination="@id/emergencyFormFragment" />
+        <action
+            android:id="@+id/action_emergencyModalFragment_to_makeNotificationFragment"
+            app:destination="@id/makeNotificationFragment" />
+        <action
+            android:id="@+id/action_emergencyModalFragment_to_emergencyDetailsMapFragment"
+            app:destination="@id/emergencyDetailsMapFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/emergencyDetailsMapFragment"
+        android:name="com.example.soscloud.ui.emergencymap.EmergencyDetailsMapFragment"
+        tools:layout="@layout/fragment_emergency_map">
+
+        <action
+            android:id="@+id/action_emergencyDetailsMapFragment_to_makeNotificationFragment"
+            app:destination="@id/makeNotificationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/emergencyListFragment"
+        android:name="com.example.soscloud.ui.emergencylist.EmergencyListFragment"
+        tools:layout="@layout/fragment_emergency_list">
+
+        <action
+            android:id="@+id/action_emergencyListFragment_to_emergencyDetailFragment"
+            app:destination="@id/emergencyDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/emergencyDetailFragment"
+        android:name="com.example.soscloud.ui.emergencydetail.EmergencyDetailFragment"
+        tools:layout="@layout/fragment_emergency_detail">
+        <argument
+            android:name="emergencyId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.soscloud.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_campus_map"
+        android:name="com.example.soscloud.ui.campusmap.CampusMapFragment"
+        tools:layout="@layout/fragment_campus_map" />
+
+    <fragment
+        android:id="@+id/userguideFragment"
+        android:name="com.example.soscloud.ui.userguide.UserGuideFragment"
+        tools:layout="@layout/fragment_user_guide"/>
+    <fragment
+        android:id="@+id/sosuserguideFragment"
+        android:name="com.example.soscloud.ui.sospersonnelguide.SosPersonnelGuide"
+        tools:layout="@layout/fragment_sos_personnel_guide"/>
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.example.soscloud.ui.emergencylist.EmergencyListFragment"
+        tools:layout="@layout/fragment_emergency_list">
+        <action
+            android:id="@+id/action_emergencyListFragment_to_makeNotificationFragment"
+            app:destination="@id/makeNotificationFragment" />
+        <action
+            android:id="@+id/action_nav_notification_to_emergencyDetailFragment"
+            app:destination="@id/emergencyDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/departmentNotificationsFragment"
+        android:name="com.example.soscloud.ui.department.DepartmentNotificationsFragment"
+        tools:layout="@layout/fragment_department_notifications">
+        <action
+            android:id="@+id/action_departmentNotificationsFragment_to_emergencyDetailFragment"
+            app:destination="@id/emergencyDetailFragment" />
+        <action
+            android:id="@+id/action_departmentNotificationsFragment_to_emergencyDetailsMapFragment"
+            app:destination="@id/emergencyDetailsMapFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allEmergencyFragment"
+        android:name="com.example.soscloud.ui.alldepartment.AllDepartmentEmergencyFragment"
+        tools:layout="@layout/fragment_all_department_emergency" />
+</navigation>

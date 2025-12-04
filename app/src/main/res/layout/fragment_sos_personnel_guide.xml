@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle"
+        android:dividerPadding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/background_header"
+            android:padding="12dp"
+            android:text="ESRS Kullanım Kılavuzu"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESRS (Emergency Situation Reporting System), kampüs içerisinde acil durumlarda hızlı ve etkili müdahale sağlamak için geliştirilmiş bir mobil uygulamadır. Öğrencilerin acil durum bildirimlerini ilgili personele doğrudan iletmesini ve SOS personelinin bu bildirimlere hızlıca müdahale etmesini sağlar."
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_header"
+            android:text="Giriş"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• E-posta ve şifrenizle giriş yapın\n• Yeni kullanıcı: 'Kayıt Ol' → 'SOS Personeli' seçin → bilgileri doldurun"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_header"
+            android:text="Ana Özellikler"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Departman Bildirimleri: Ana ekranda görev aldığınız birime gelen acil durum bildirimleri görüntülenir ve işleme alınır\n\n• Tüm Bildirimler: Sol menüden 'Tüm Bildirimler'i seçerek sistemdeki tüm acil durumları görüntüleyin. Bu sekmeden herhangi bir işlem yapılamaz\n\n• Acil Durum İşlemleri:\n    - Bildirime tıklayarak detayları görüntüleyin\n    - 'Haritada Göster' ile konumu görün\n    - 'İşleme Al' butonu ile durumu 'Okundu' olarak işaretleyin\n    - Müdahale sonrası 'Tamamlandı Olarak İşaretle' butonuna basın\n\n• Kampüs Haritası: Sol menüden 'Kampüs Haritası'nı görüntüleyin\n\n• Profil: Sol menüden 'Profil'e giderek departman bilgilerinizi güncelleyin"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not: Bildirim almak için uygulama izinlerini etkinleştirin. Hızlı müdahale için uygulamayı açık tutun."
+            android:textStyle="italic"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

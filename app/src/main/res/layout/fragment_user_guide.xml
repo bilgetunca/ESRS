@@ -1,0 +1,69 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle"
+        android:dividerPadding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_header"
+            android:text="ESRS Kullanım Kılavuzu"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESRS (Emergency Situation Reporting System), kampüs içerisinde acil durumlarda hızlı ve etkili müdahale sağlamak için geliştirilmiş bir mobil uygulamadır. ..."
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_header"
+            android:text="Giriş"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• E-posta ve şifrenizle giriş yapın\n• Yeni kullanıcı: 'Kayıt Ol' → 'Öğrenci' seçin → bilgileri doldurun"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_header"
+            android:text="Ana Özellikler"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="•• Acil Durum Bildirme: Ana ekrandaki kırmızı ACİL DURUM BİLDİR butonuna basın\n    - Acil durum türünü seçin (Revir, Yangın, Güvenlik, Polis)\n    - 'Konumunu Belirt' butonu ile konumunuzu ekipler ile \n       paylaşın \n    - 'ACİL DURUMU BİLDİR' butonuna basın\n\n• Bildirimleriniz: Sol menüden 'Bildirimlerim' seçerek yaptığınız bildirimleri ve durumlarını görüntüleyin\n\n• İlk Yardım Bilgileri: Acil durum sayfasındaki 'İlk Yardım Bilgileri' butonu ile temel bilgilere erişin\n\n• Kampüs Haritası: Sol menüden \'Kampüs Haritası\'nı görüntüleyin\n\n• Profil: Sol menüden \'Profil\'e giderek kişisel ve sağlık bilgilerinizi güncelleyin"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not: GPS ve bildirim izinlerini açık tutun. ..."
+            android:textStyle="italic"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

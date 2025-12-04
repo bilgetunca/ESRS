@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SosCloud</string>
+    <string name="title_activity_report_emergency"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_make_notification">Bildirim Yap</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_campus_map">Kampüs Haritası</string>
+    <string name="menu_notification">Bildirimlerim</string>
+    <string name="login_required">Oturum açmanız gerekiyor</string>
+    <string name="user_info_not_found">Kullanıcı bilgileri bulunamadı</string>
+    <string name="error">Hata: </string>
+    <string name="missing_user_details_for_emergency">Acil durumları yüklemek için gerekli kullanıcı bilgileri eksik</string>
+    <string name="error_creating_query">Sorgu oluşturulurken hata: </string>
+    <string name="error_loading_data">Veriler yüklenirken hata: </string>
+    <string name="error_updating_status">Durum güncellenemedi: </string>
+    <string name="get_coordinates">Konumunu Belirt</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone_number">Telefon Numarası</string>
+    <string name="id_number">TC Kimlik No</string>
+    <string name="height">Boy(cm)</string>
+    <string name="weight">Kilo(kg)</string>
+    <string name="sos_personel">SOS Personel</string>
+    <string name="student">Öğrenci</string>
+</resources>

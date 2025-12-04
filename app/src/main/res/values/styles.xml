@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom style attributes -->
+    <style name="CustomAppBarStyle" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="CustomPopupStyle" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:textColor">@color/maintextcolor</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="radioButtonStyle">
+        <item name="android:buttonTint">@color/maintextcolor</item>
+        <item name="android:textColor">@color/maintextcolor</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_peekHeight">512dp</item>
+        <item name="behavior_hideable">true</item>
+    </style>
+
+    <!-- Toolbar title bold style -->
+    <style name="ToolbarTitleBold" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+</resources>

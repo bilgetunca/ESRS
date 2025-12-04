@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="188dp"
+            android:layout_height="122dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acil Durum Bildir"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acil durum türü nedir?"
+            android:layout_marginTop="16dp"/>
+
+        <GridLayout
+            android:id="@+id/gridLayoutEmergencyTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- RadioButton: Revir -->
+            <RadioButton
+                android:id="@+id/radioRevir"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/ambulance_icon_selector"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal|bottom"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Revir"
+                android:textColor="@drawable/radio_button_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- RadioButton: Yangın -->
+            <RadioButton
+                android:id="@+id/radioYangin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/fire_icon_selector"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal|bottom"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Yangın"
+                android:textColor="@drawable/radio_button_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- RadioButton: Güvenlik -->
+            <RadioButton
+                android:id="@+id/radioGuvenlik"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/security_icon_selector"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal|bottom"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Güvenlik"
+                android:textColor="@drawable/radio_button_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- RadioButton: Polis -->
+            <RadioButton
+                android:id="@+id/radioPolis"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/radio_button_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/police_icon_selector"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal|bottom"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Polis"
+                android:textColor="@drawable/radio_button_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/buttonCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_coordinates"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/maintextcolor"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/emergencyConfirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#D32F2F"
+            android:text="ACİL DURUMU BİLDİR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

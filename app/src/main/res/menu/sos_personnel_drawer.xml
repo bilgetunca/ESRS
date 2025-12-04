@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/allEmergencyFragment"
+            android:icon="@drawable/ic_menu_notification"
+            android:title="Tüm Bildirimler" />
+        <item
+            android:icon="@drawable/ic_menu_notification"
+            android:id="@+id/departmentNotificationsFragment"
+            android:title="Departman Bildirimleri" />
+        <item
+            android:id="@+id/nav_campus_map"
+            android:icon="@drawable/ic_menu_map"
+            android:title="Kampüs Haritası" />
+        <item
+            android:id="@+id/sosuserguideFragment"
+            android:icon="@drawable/ic_menu_guide"
+            android:title="Uygulama Kullanım Kılavuzu"/>
+
+    </group>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_menu_logout"/>
+</menu> 
